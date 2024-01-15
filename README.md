@@ -27,3 +27,13 @@ sequenceDiagram
   App->>GitHub: Message with result
   GitHub->>Trainee: See result
 ```
+
+## Tech Stack
+- Node.js
+- Probot
+- Octokit
+- Docker
+- Jest
+- MSW
+- Netlify
+- AWS
