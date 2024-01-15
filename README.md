@@ -10,3 +10,20 @@ Checking for grammar, spelling and punctuation mistakes in PD coursework before 
 - LanguageTool checks the text for mistakes then sends the result back to the app.
 - The app creates a new message for the issue with the result.
 - This process is repeated till there are no more mistakes.
+
+## Architecture
+The sequence diagram below shows the series of events and calls.
+
+```mermaid
+sequenceDiagram
+  actor Trainee
+  participant GitHub
+  participant App
+  participant LanguageTool
+  Trainee->>GitHub: Message with PDF file
+  GitHub->>App: Webhook
+  App->>LanguageTool: Extract text then send
+  LanguageTool->>App: Check for mistakes then send result
+  App->>GitHub: Message with result
+  GitHub->>Trainee: See result
+```
