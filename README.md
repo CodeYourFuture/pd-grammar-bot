@@ -39,5 +39,5 @@ sequenceDiagram
 - AWS
 
 ## Deployment
-- GitHub as a Netlify serverless function.
+- GitHub app as a Netlify serverless function.
 - Self-hosted LanguageTool instance inside a Docker container on AWS.
