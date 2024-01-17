@@ -6,7 +6,7 @@ Checking for grammar, spelling and punctuation mistakes in PD coursework before 
 - Trainees download their PD coursework as a PDF file from Google Docs.
 - They upload the file to the message box on the PD courework GitHub issue page and submit.
 - Ater submitting, a webhook is sent to the GitHub app.
-- If there is a file URL in the message, the app extracts the text from the file then sends it to a self-hosted LanguageTook instance running inside a Docker container on AWS.
+- If there is a file URL in the message, the app extracts the text from the file then sends it to a self-hosted LanguageTool instance running inside a Docker container on AWS.
 - LanguageTool checks the text for mistakes then sends the result back to the app.
 - The app creates a new message for the issue with the result.
 - This process is repeated till there are no more mistakes.
