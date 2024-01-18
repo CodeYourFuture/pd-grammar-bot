@@ -2,7 +2,9 @@ import { createLambdaFunction, createProbot } from '@probot/adapter-aws-lambda-s
 
 const appFn = (app) => {
     app.on("issue_comment.created", async (context) => {
-        console.log(context.payload.comment.body);
+        if (context.payload.comment.user.type !== 'Bot') {
+            
+        }
     });
 };
 
