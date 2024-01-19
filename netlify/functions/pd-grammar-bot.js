@@ -13,7 +13,10 @@ const appFn = (app) => {
                 let res = await fetch(pdfUrl);
                 const fileBuffer = await res.arrayBuffer();
 
-                
+                const pdfData = await pdf(fileBuffer, { pagerender: renderPage });
+                const pdfText = pdfData.text;
+
+                console.log(pdfText);
             }
         }
     });
