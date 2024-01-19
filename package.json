@@ -13,7 +13,6 @@
     "@probot/adapter-aws-lambda-serverless": "^3.0.4",
     "pdf-parse": "^1.1.1"
   },
-  "type": "module",
   "engines": {
     "node": "18.x"
   }
