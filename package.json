@@ -4,7 +4,7 @@
   "description": "Checking for grammar, spelling and punctuation mistakes in PD coursework before submitting is very important. Trainees are not using extensions in word processing software to do this and volunteers are having to check manually which takes up a lot of their time. The PD Grammar Bot is a GitHub app which automatically checks PD coursework submissions for mistakes:\r - After forking a CYF repo containing PD coursework issues, the user installs the app in the forked repo through a link.\r - Trainees download their PD coursework as a PDF file from Google Docs.\r - They upload the file to the message box on the PD courework GitHub issue page and submit.\r - Ater submitting, a webhook is sent to the GitHub app.\r - If there is a file URL in the message, the app extracts the text from the file then sends it to a self-hosted LanguageTool instance running inside a Docker container on AWS.\r - LanguageTool checks the text for mistakes then sends the result back to the app.\r - The app creates a new message for the issue with the result.\r - This process is repeated till there are no more mistakes.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +15,9 @@
   },
   "engines": {
     "node": "18.x"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "msw": "^2.1.3"
   }
 }
