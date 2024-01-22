@@ -18,14 +18,13 @@ afterAll(() => {
 });
 
 describe('GitHub app', () => {
-    it('works', async () => {
+    it('checks PDF text for mistakes', async () => {
         server.use(...handlers.checkPDF);
         const result = await handler(createGitHubRequest(payload));
 
-        console.log(requestPayloads);
-
         expect(result.statusCode).toBe(200);
-        expect(requestPayloads.checkPDF.checkText).toContain('My PD Coursework');
+        expect(requestPayloads.checkPDF.checkText.text).toContain('My PD Coursework');
+        expect(requestPayloads.checkPDF.createComment.body).toContain('Total mistakes: 2');
     });
 });
 

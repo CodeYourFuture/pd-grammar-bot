@@ -5,7 +5,8 @@ const langToolResponse = require('./sample-data/langtool-response.json');
 
 const requestPayloads = {
     checkPDF: {
-        checkText: {}
+        checkText: {},
+        createComment: {}
     }
 };
 
@@ -25,6 +26,14 @@ const handlers = {
             requestPayloads.checkPDF.checkText = await getPayload(request);
 
             return HttpResponse.json(langToolResponse);
+        }),
+        http.post('https://api.github.com/app/installations/46278106/access_tokens', async ({ request }) => {
+            return HttpResponse.json({ ok: 'true' });
+        }),
+        http.post('https://api.github.com/repos/haroon-ali-dev/github-app-testing/issues/1/comments', async ({ request }) => {
+            requestPayloads.checkPDF.createComment = await request.json();
+
+            return HttpResponse.json({ ok: 'true' });
         })
     ]
 };
