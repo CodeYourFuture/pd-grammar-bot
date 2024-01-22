@@ -1,18 +1,12 @@
 const { createLambdaFunction, createProbot } = require('@probot/adapter-aws-lambda-serverless');
-const pdf = require('pdf-parse');
+const { getPdfText } = require('../../src/pdf');
 
 const appFn = (app) => {
     app.on("issue_comment.created", async (context) => {
         if (context.payload.comment.user.type !== 'Bot') {
             if (context.payload.comment.body.includes('[pd.pdf]')) {
                 try {
-                    const match = context.payload.comment.body.match(/\[pd\.pdf\]\(([^)]+)\)/);
-                    const pdfUrl = match ? match[1] : null;
-    
-                    let res = await fetch(pdfUrl);
-                    const fileBuffer = await res.arrayBuffer();
-    
-                    const pdfData = await pdf(fileBuffer, { pagerender: renderPage });
+                    const pdfText = await getPdfText(context.payload.comment.body);
     
                     const langToolUrl = process.env.NODE_ENV === 'development' ? 'http://localhost:8010/v2/check' : process.env.LANG_TOOL_URL;
     
@@ -23,7 +17,7 @@ const appFn = (app) => {
                         },
                         body: new URLSearchParams({
                             language: 'en-GB',
-                            text: pdfData.text
+                            text: pdfText
                         })
                     });
     
@@ -45,20 +39,3 @@ const appFn = (app) => {
 module.exports.handler = createLambdaFunction(appFn, {
     probot: createProbot(),
 });
-
-function renderPage(pageData) {
-    return pageData.getTextContent()
-        .then(textContent => {
-            let lastY, text = '';
-            for (let item of textContent.items) {
-                if (lastY == item.transform[5] || !lastY) {
-                    text += item.str + ' ';
-                }
-                else {
-                    text += '\n' + item.str + ' ';
-                }
-                lastY = item.transform[5];
-            }
-            return text;
-        });
-}
