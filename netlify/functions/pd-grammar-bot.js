@@ -25,5 +25,3 @@ const appFn = (app) => {
 module.exports.handler = createLambdaFunction(appFn, {
     probot: createProbot(),
 });
-
-module.exports.appFn = appFn;
