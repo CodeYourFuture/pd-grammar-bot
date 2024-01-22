@@ -5,7 +5,7 @@ process.env.PRIVATE_KEY = privateKey;
 process.env.WEBHOOK_SECRET = 'webhookSecret';
 
 const crypto = require('crypto');
-const { server, handlers } = require('./server');
+const { server, handlers, requestPayloads } = require('./server');
 const { handler } = require('../netlify/functions/pd-grammar-bot');
 const payload = require('../sample-data/github-event.json');
 
@@ -20,8 +20,12 @@ afterAll(() => {
 describe('GitHub app', () => {
     it('works', async () => {
         server.use(...handlers.checkPDF);
-
         const result = await handler(createGitHubRequest(payload));
+
+        console.log(requestPayloads);
+
+        expect(result.statusCode).toBe(200);
+        expect(requestPayloads.checkPDF.checkText).toContain('My PD Coursework');
     });
 });
 

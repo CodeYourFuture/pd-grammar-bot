@@ -15,7 +15,7 @@ const appFn = (app) => {
                     const params = context.issue({ body: commentBody });
                     return context.octokit.issues.createComment(params);
                 } catch (error) {
-                    console.log(error.message);
+                    console.log(error);
                 }
             }
         }

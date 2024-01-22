@@ -1,0 +1,66 @@
+{
+    "matches": [
+        {
+            "message": "This word is normally spelled with a hyphen.",
+            "shortMessage": "Compound",
+            "replacements": [
+                {
+                    "value": "long-established"
+                }
+            ],
+            "offset": 72,
+            "length": 16,
+            "context": {
+                "text": "... This is the first paragraph. ● It is a long established fact that a reader. ● It is a long esta...",
+                "offset": 43,
+                "length": 16
+            },
+            "sentence": "● It is a long established fact that a reader.",
+            "type": {
+                "typeName": "Other"
+            },
+            "rule": {
+                "id": "EN_COMPOUNDS_LONG_ESTABLISHED",
+                "description": "Hyphenated words: long established",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "MISC",
+                    "name": "Miscellaneous"
+                }
+            },
+            "ignoreForIncompleteSentence": false,
+            "contextForSureMatch": 0
+        },
+        {
+            "message": "This word is normally spelled with a hyphen.",
+            "shortMessage": "Compound",
+            "replacements": [
+                {
+                    "value": "long-established"
+                }
+            ],
+            "offset": 119,
+            "length": 16,
+            "context": {
+                "text": "...tablished fact that a reader. ● It is a long established fact that a reader. Second Paragraph Th...",
+                "offset": 43,
+                "length": 16
+            },
+            "sentence": "● It is a long established fact that a reader.",
+            "type": {
+                "typeName": "Other"
+            },
+            "rule": {
+                "id": "EN_COMPOUNDS_LONG_ESTABLISHED",
+                "description": "Hyphenated words: long established",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "MISC",
+                    "name": "Miscellaneous"
+                }
+            },
+            "ignoreForIncompleteSentence": false,
+            "contextForSureMatch": 0
+        }
+    ]
+}
