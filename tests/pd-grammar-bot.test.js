@@ -1,14 +1,26 @@
 const { privateKey } = require('./sample-data/dummy-private-key.json');
+process.env.NODE_ENV = 'development';
 process.env.APP_ID = 1;
 process.env.PRIVATE_KEY = privateKey;
 process.env.WEBHOOK_SECRET = 'webhookSecret';
 
 const crypto = require('crypto');
+const { server, handlers } = require('./server');
 const { handler } = require('../netlify/functions/pd-grammar-bot');
 const payload = require('../sample-data/github-event.json');
 
+beforeEach(() => {
+    server.resetHandlers();
+});
+
+afterAll(() => {
+    server.close();
+});
+
 describe('GitHub app', () => {
     it('works', async () => {
+        server.use(...handlers.checkPDF);
+
         const result = await handler(createGitHubRequest(payload));
     });
 });
