@@ -12,7 +12,7 @@ async function getPdfText(commentBody) {
 }
 
 function getPdfUrl(commentBody) {
-    const match = commentBody.match(/\[pd\.pdf\]\(([^)]+)\)/);
+    const match = commentBody.match(/\.pdf]\(([^)]+)\)/);
     return match ? match[1] : null;
 }
 
