@@ -5,7 +5,7 @@ const { createCommentBody } = require('../../src/comment');
 
 const appFn = (app) => {
     app.on("issue_comment.created", async (context) => {
-        if (context.payload.comment.user.type !== 'Bot') {
+        if (context.payload.comment.user.type === 'User') {
             if (context.payload.comment.body.includes('[pd.pdf]')) {
                 try {
                     const pdfText = await getPdfText(context.payload.comment.body);
