@@ -7,9 +7,11 @@ function createCommentBody(langToolResult) {
 
         for (let mistake of langToolResult.matches) {
             let replacements = [];
-            for (let replacement of mistake.replacements) {
-                replacements.push(replacement.value);
-            }
+            mistake.replacements.forEach((e, i) => {
+                if (i <= 3) {
+                    replacements.push(e.value);
+                }
+            });
 
             commentBody += "\n";
             commentBody += `> **What:** ${mistake.message}`;
