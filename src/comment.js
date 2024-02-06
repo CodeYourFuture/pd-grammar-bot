@@ -1,6 +1,10 @@
 function createCommentBody(langToolResult) {
-    const commentBody = `Total mistakes: ${langToolResult.matches.length}`;
-    return commentBody;
+    if (langToolResult.matches.length === 0) {
+        const commentBody = `### Total Mistakes: ${langToolResult.matches.length}`;
+        return commentBody;
+    } else {
+        
+    }
 }
 
 module.exports.createCommentBody = createCommentBody;
