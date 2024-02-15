@@ -1,9 +1,9 @@
 function createCommentBody(langToolResult) {
     if (langToolResult.matches.length === 0) {
-        const commentBody = `### Total Mistakes: ${langToolResult.matches.length}`;
+        const commentBody = `### Total Mistakes Identified: ${langToolResult.matches.length}`;
         return commentBody;
     } else {
-        let commentBody = `### Total Mistakes: ${langToolResult.matches.length}`;
+        let commentBody = `### Total Mistakes Identified: ${langToolResult.matches.length}`;
 
         for (let mistake of langToolResult.matches) {
             let replacements = [];
