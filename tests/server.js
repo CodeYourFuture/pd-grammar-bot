@@ -4,7 +4,7 @@ const { http, HttpResponse } = require('msw');
 const langToolResponse = require('./sample-data/langtool-response.json');
 
 const requestPayloads = {
-    checkPDF: {
+    checkText: {
         checkText: {},
         createComment: {}
     }
@@ -16,14 +16,14 @@ const handlers = {
             return HttpResponse.json({ ok: 'true' });
         })
     ],
-    checkPDF: [
-        http.get('https://github.com/haroon-ali-dev/github-app-testing/files/14011890/pd.pdf', ({ request }) => {
-            const pdfBuffer = fs.readFileSync('tests/sample-data/pd.pdf');
+    checkText: [
+        http.get('https://github.com/haroon-ali-dev/github-app-testing/files/14590494/pd.docx', ({ request }) => {
+            const fileBuffer = fs.readFileSync('tests/sample-data/pd.docx');
 
-            return new HttpResponse(pdfBuffer, { status: 200 });
+            return new HttpResponse(fileBuffer, { status: 200 });
         }),
         http.post('http://localhost:8010/v2/check', async ({ request }) => {
-            requestPayloads.checkPDF.checkText = await getPayload(request);
+            requestPayloads.checkText.checkText = await getPayload(request);
 
             return HttpResponse.json(langToolResponse);
         }),
@@ -31,7 +31,7 @@ const handlers = {
             return HttpResponse.json({ ok: 'true' });
         }),
         http.post('https://api.github.com/repos/haroon-ali-dev/github-app-testing/issues/1/comments', async ({ request }) => {
-            requestPayloads.checkPDF.createComment = await request.json();
+            requestPayloads.checkText.createComment = await request.json();
 
             return HttpResponse.json({ ok: 'true' });
         })
