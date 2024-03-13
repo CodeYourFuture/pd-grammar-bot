@@ -6,7 +6,7 @@ const { createCommentBody } = require('../../src/comment');
 const appFn = (app) => {
     app.on("issue_comment.created", async (context) => {
         if (context.payload.comment.user.type === 'User') {
-            if (/\.pdf\b/.test(context.payload.comment.body)) {
+            if (/\.docx\b/.test(context.payload.comment.body)) {
                 try {
                     const pdfText = await getPdfText(context.payload.comment.body);
                     const langToolResult = await checkText(pdfText);
