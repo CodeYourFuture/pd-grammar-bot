@@ -11,16 +11,22 @@ function createCommentBody(langToolResult) {
         };
 
         if (match.rule.category.name in categoryMatches) {
-            if (categoryMatches[match.rule.category.name].length < 3) {
-                categoryMatches[match.rule.category.name].push(matchProperties);
-            }
+            categoryMatches[match.rule.category.name].push(matchProperties);
         } else {
             categoryMatches[match.rule.category.name] = [];
             categoryMatches[match.rule.category.name].push(matchProperties);
         }
     }
 
-    const commentBody = `### Total Possible Mistakes: ${mistakesCount}`;
+    let commentBody = `### Total Possible Mistakes: ${mistakesCount}`;
+
+    if (mistakesCount > 0) {
+        commentBody += "\n";
+
+        for (let key in categoryMatches) {
+            commentBody += `\n- ${key}: ${categoryMatches[key].length}`;
+        }
+    }
 
     return commentBody;
 
