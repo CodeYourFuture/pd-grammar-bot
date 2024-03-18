@@ -1,0 +1,1882 @@
+{
+    "software": {
+        "name": "LanguageTool",
+        "version": "6.3",
+        "buildDate": "2023-12-08 08:53:27 +0000",
+        "apiVersion": 1,
+        "premium": false,
+        "premiumHint": "You might be missing errors only the Premium version can find. Contact us at support<at>languagetoolplus.com.",
+        "status": ""
+    },
+    "warnings": {
+        "incompleteResults": false
+    },
+    "language": {
+        "name": "English (GB)",
+        "code": "en-GB",
+        "detectedLanguage": {
+            "name": "English (US)",
+            "code": "en-US",
+            "confidence": 0.99999535,
+            "source": "+fallback"
+        }
+    },
+    "matches": [
+        {
+            "message": "The personal pronoun “I” should be uppercase.",
+            "shortMessage": "",
+            "replacements": [
+                {
+                    "value": "I"
+                }
+            ],
+            "offset": 0,
+            "length": 1,
+            "context": {
+                "text": "i walked to the stor with my frend, we br...",
+                "offset": 0,
+                "length": 1
+            },
+            "sentence": "i walked to the stor with my frend, we brought a baskit of fruts.",
+            "type": {
+                "typeName": "Other"
+            },
+            "rule": {
+                "id": "I_LOWERCASE",
+                "subId": "1",
+                "sourceFile": "grammar.xml",
+                "description": "i vs. I",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "TYPOS",
+                    "name": "Possible Typo"
+                }
+            },
+            "ignoreForIncompleteSentence": true,
+            "contextForSureMatch": -1
+        },
+        {
+            "message": "Possible spelling mistake found.",
+            "shortMessage": "Spelling mistake",
+            "replacements": [
+                {
+                    "value": "story"
+                },
+                {
+                    "value": "star"
+                },
+                {
+                    "value": "stop"
+                },
+                {
+                    "value": "store"
+                },
+                {
+                    "value": "storm"
+                },
+                {
+                    "value": "stir"
+                },
+                {
+                    "value": "Astor"
+                },
+                {
+                    "value": "STOL"
+                },
+                {
+                    "value": "stork"
+                },
+                {
+                    "value": "JSTOR"
+                },
+                {
+                    "value": "stow"
+                },
+                {
+                    "value": "SCOR"
+                },
+                {
+                    "value": "STAR"
+                },
+                {
+                    "value": "STO"
+                },
+                {
+                    "value": "STR"
+                },
+                {
+                    "value": "Shor"
+                },
+                {
+                    "value": "Star"
+                },
+                {
+                    "value": "Stoa"
+                },
+                {
+                    "value": "Stoer"
+                },
+                {
+                    "value": "Ston"
+                },
+                {
+                    "value": "Stork"
+                },
+                {
+                    "value": "Storm"
+                },
+                {
+                    "value": "Story"
+                },
+                {
+                    "value": "Stour"
+                },
+                {
+                    "value": "Stow"
+                },
+                {
+                    "value": "TOR"
+                },
+                {
+                    "value": "Tor"
+                },
+                {
+                    "value": "tor"
+                }
+            ],
+            "offset": 16,
+            "length": 4,
+            "context": {
+                "text": "i walked to the stor with my frend, we brought a baskit of f...",
+                "offset": 16,
+                "length": 4
+            },
+            "sentence": "i walked to the stor with my frend, we brought a baskit of fruts.",
+            "type": {
+                "typeName": "UnknownWord"
+            },
+            "rule": {
+                "id": "MORFOLOGIK_RULE_EN_GB",
+                "description": "Possible spelling mistake",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "TYPOS",
+                    "name": "Possible Typo"
+                }
+            },
+            "ignoreForIncompleteSentence": false,
+            "contextForSureMatch": 0
+        },
+        {
+            "message": "Possible spelling mistake found.",
+            "shortMessage": "Spelling mistake",
+            "replacements": [
+                {
+                    "value": "friend"
+                },
+                {
+                    "value": "trend"
+                },
+                {
+                    "value": "Fred"
+                },
+                {
+                    "value": "freed"
+                },
+                {
+                    "value": "Freud"
+                },
+                {
+                    "value": "fend"
+                },
+                {
+                    "value": "fiend"
+                },
+                {
+                    "value": "frond"
+                },
+                {
+                    "value": "rend"
+                },
+                {
+                    "value": "fr end"
+                }
+            ],
+            "offset": 29,
+            "length": 5,
+            "context": {
+                "text": "i walked to the stor with my frend, we brought a baskit of fruts. their we...",
+                "offset": 29,
+                "length": 5
+            },
+            "sentence": "i walked to the stor with my frend, we brought a baskit of fruts.",
+            "type": {
+                "typeName": "UnknownWord"
+            },
+            "rule": {
+                "id": "MORFOLOGIK_RULE_EN_GB",
+                "description": "Possible spelling mistake",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "TYPOS",
+                    "name": "Possible Typo"
+                }
+            },
+            "ignoreForIncompleteSentence": false,
+            "contextForSureMatch": 0
+        },
+        {
+            "message": "Possible spelling mistake found.",
+            "shortMessage": "Spelling mistake",
+            "replacements": [
+                {
+                    "value": "basket"
+                },
+                {
+                    "value": "ba skit"
+                },
+                {
+                    "value": "bas kit"
+                },
+                {
+                    "value": "bask it"
+                }
+            ],
+            "offset": 49,
+            "length": 6,
+            "context": {
+                "text": "...to the stor with my frend, we brought a baskit of fruts. their wer apples, bananas, an...",
+                "offset": 43,
+                "length": 6
+            },
+            "sentence": "i walked to the stor with my frend, we brought a baskit of fruts.",
+            "type": {
+                "typeName": "UnknownWord"
+            },
+            "rule": {
+                "id": "MORFOLOGIK_RULE_EN_GB",
+                "description": "Possible spelling mistake",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "TYPOS",
+                    "name": "Possible Typo"
+                }
+            },
+            "ignoreForIncompleteSentence": false,
+            "contextForSureMatch": 0
+        },
+        {
+            "message": "Possible spelling mistake found.",
+            "shortMessage": "Spelling mistake",
+            "replacements": [
+                {
+                    "value": "fruits"
+                },
+                {
+                    "value": "frets"
+                },
+                {
+                    "value": "ruts"
+                },
+                {
+                    "value": "frits"
+                }
+            ],
+            "offset": 59,
+            "length": 5,
+            "context": {
+                "text": "...r with my frend, we brought a baskit of fruts. their wer apples, bananas, and orangez...",
+                "offset": 43,
+                "length": 5
+            },
+            "sentence": "i walked to the stor with my frend, we brought a baskit of fruts.",
+            "type": {
+                "typeName": "UnknownWord"
+            },
+            "rule": {
+                "id": "MORFOLOGIK_RULE_EN_GB",
+                "description": "Possible spelling mistake",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "TYPOS",
+                    "name": "Possible Typo"
+                }
+            },
+            "ignoreForIncompleteSentence": false,
+            "contextForSureMatch": 0
+        },
+        {
+            "message": "This sentence does not start with an uppercase letter.",
+            "shortMessage": "",
+            "replacements": [
+                {
+                    "value": "Their"
+                }
+            ],
+            "offset": 66,
+            "length": 5,
+            "context": {
+                "text": "...my frend, we brought a baskit of fruts. their wer apples, bananas, and orangez. we al...",
+                "offset": 43,
+                "length": 5
+            },
+            "sentence": "their wer apples, bananas, and orangez.",
+            "type": {
+                "typeName": "Other"
+            },
+            "rule": {
+                "id": "UPPERCASE_SENTENCE_START",
+                "description": "Checks that a sentence starts with an uppercase letter",
+                "issueType": "typographical",
+                "urls": [
+                    {
+                        "value": "https://languagetool.org/insights/post/spelling-capital-letters/"
+                    }
+                ],
+                "category": {
+                    "id": "CASING",
+                    "name": "Capitalization"
+                }
+            },
+            "ignoreForIncompleteSentence": true,
+            "contextForSureMatch": -1
+        },
+        {
+            "message": "Possible spelling mistake found.",
+            "shortMessage": "Spelling mistake",
+            "replacements": [
+                {
+                    "value": "we"
+                },
+                {
+                    "value": "were",
+                    "shortDescription": "second-person singular simple past of 'be', e.g. 'you were'"
+                },
+                {
+                    "value": "her"
+                },
+                {
+                    "value": "war",
+                    "shortDescription": "armed conflict"
+                },
+                {
+                    "value": "wear"
+                },
+                {
+                    "value": "web"
+                },
+                {
+                    "value": "wet"
+                },
+                {
+                    "value": "per"
+                },
+                {
+                    "value": "wed"
+                },
+                {
+                    "value": "Wear"
+                },
+                {
+                    "value": "wee",
+                    "shortDescription": "small, a short time"
+                },
+                {
+                    "value": "usher"
+                },
+                {
+                    "value": "weir"
+                },
+                {
+                    "value": "AER"
+                },
+                {
+                    "value": "BER"
+                },
+                {
+                    "value": "CER"
+                },
+                {
+                    "value": "EER"
+                },
+                {
+                    "value": "ER"
+                },
+                {
+                    "value": "FER"
+                },
+                {
+                    "value": "HER"
+                },
+                {
+                    "value": "Her"
+                },
+                {
+                    "value": "KER"
+                },
+                {
+                    "value": "LER"
+                },
+                {
+                    "value": "MER"
+                },
+                {
+                    "value": "NER"
+                },
+                {
+                    "value": "PER"
+                },
+                {
+                    "value": "RER"
+                },
+                {
+                    "value": "RWer"
+                },
+                {
+                    "value": "SER"
+                },
+                {
+                    "value": "TER"
+                },
+                {
+                    "value": "UER"
+                },
+                {
+                    "value": "WEC"
+                },
+                {
+                    "value": "WEG"
+                },
+                {
+                    "value": "WEP"
+                },
+                {
+                    "value": "WET"
+                },
+                {
+                    "value": "WIR"
+                },
+                {
+                    "value": "WOer"
+                },
+                {
+                    "value": "Wea"
+                },
+                {
+                    "value": "Weir"
+                },
+                {
+                    "value": "Wem"
+                },
+                {
+                    "value": "Wen"
+                },
+                {
+                    "value": "Wert"
+                },
+                {
+                    "value": "der"
+                },
+                {
+                    "value": "er"
+                },
+                {
+                    "value": "ewer"
+                },
+                {
+                    "value": "fer"
+                },
+                {
+                    "value": "Augher"
+                },
+                {
+                    "value": "Usher"
+                }
+            ],
+            "offset": 72,
+            "length": 3,
+            "context": {
+                "text": "...nd, we brought a baskit of fruts. their wer apples, bananas, and orangez. we also g...",
+                "offset": 43,
+                "length": 3
+            },
+            "sentence": "their wer apples, bananas, and orangez.",
+            "type": {
+                "typeName": "UnknownWord"
+            },
+            "rule": {
+                "id": "MORFOLOGIK_RULE_EN_GB",
+                "description": "Possible spelling mistake",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "TYPOS",
+                    "name": "Possible Typo"
+                }
+            },
+            "ignoreForIncompleteSentence": false,
+            "contextForSureMatch": 0
+        },
+        {
+            "message": "Possible spelling mistake found.",
+            "shortMessage": "Spelling mistake",
+            "replacements": [
+                {
+                    "value": "orange"
+                },
+                {
+                    "value": "oranges"
+                },
+                {
+                    "value": "orangey"
+                },
+                {
+                    "value": "Orange"
+                }
+            ],
+            "offset": 97,
+            "length": 7,
+            "context": {
+                "text": "...f fruts. their wer apples, bananas, and orangez. we also got som candy and chips. i see...",
+                "offset": 43,
+                "length": 7
+            },
+            "sentence": "their wer apples, bananas, and orangez.",
+            "type": {
+                "typeName": "UnknownWord"
+            },
+            "rule": {
+                "id": "MORFOLOGIK_RULE_EN_GB",
+                "description": "Possible spelling mistake",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "TYPOS",
+                    "name": "Possible Typo"
+                }
+            },
+            "ignoreForIncompleteSentence": false,
+            "contextForSureMatch": 0
+        },
+        {
+            "message": "This sentence does not start with an uppercase letter.",
+            "shortMessage": "",
+            "replacements": [
+                {
+                    "value": "We"
+                }
+            ],
+            "offset": 106,
+            "length": 2,
+            "context": {
+                "text": "...their wer apples, bananas, and orangez. we also got som candy and chips. i seen a ...",
+                "offset": 43,
+                "length": 2
+            },
+            "sentence": "we also got som candy and chips.",
+            "type": {
+                "typeName": "Other"
+            },
+            "rule": {
+                "id": "UPPERCASE_SENTENCE_START",
+                "description": "Checks that a sentence starts with an uppercase letter",
+                "issueType": "typographical",
+                "urls": [
+                    {
+                        "value": "https://languagetool.org/insights/post/spelling-capital-letters/"
+                    }
+                ],
+                "category": {
+                    "id": "CASING",
+                    "name": "Capitalization"
+                }
+            },
+            "ignoreForIncompleteSentence": true,
+            "contextForSureMatch": -1
+        },
+        {
+            "message": "Possible spelling mistake found.",
+            "shortMessage": "Spelling mistake",
+            "replacements": [
+                {
+                    "value": "some",
+                    "shortDescription": "a few"
+                },
+                {
+                    "value": "so"
+                },
+                {
+                    "value": "son",
+                    "shortDescription": "a male human offspring"
+                },
+                {
+                    "value": "sum",
+                    "shortDescription": "amount"
+                },
+                {
+                    "value": "Sam"
+                },
+                {
+                    "value": "Dom"
+                },
+                {
+                    "value": "SOS"
+                },
+                {
+                    "value": "soy"
+                },
+                {
+                    "value": "SOC"
+                },
+                {
+                    "value": "SOE"
+                },
+                {
+                    "value": "sod",
+                    "shortDescription": "turf"
+                },
+                {
+                    "value": "sow",
+                    "shortDescription": "place seeds in the ground"
+                },
+                {
+                    "value": "IOM"
+                },
+                {
+                    "value": "SRM"
+                },
+                {
+                    "value": "SSM"
+                },
+                {
+                    "value": "soma"
+                },
+                {
+                    "value": "Qom"
+                },
+                {
+                    "value": "SDM"
+                },
+                {
+                    "value": "SGM"
+                },
+                {
+                    "value": "sob"
+                },
+                {
+                    "value": "soi"
+                },
+                {
+                    "value": "sop"
+                },
+                {
+                    "value": "sou"
+                },
+                {
+                    "value": "sot"
+                },
+                {
+                    "value": "ROM"
+                },
+                {
+                    "value": "AOM"
+                },
+                {
+                    "value": "BOM"
+                },
+                {
+                    "value": "COM"
+                },
+                {
+                    "value": "DOM"
+                },
+                {
+                    "value": "HOM"
+                },
+                {
+                    "value": "MOM"
+                },
+                {
+                    "value": "OM"
+                },
+                {
+                    "value": "OOM"
+                },
+                {
+                    "value": "POM"
+                },
+                {
+                    "value": "SAM"
+                },
+                {
+                    "value": "SBM"
+                },
+                {
+                    "value": "SCM"
+                },
+                {
+                    "value": "SEM"
+                },
+                {
+                    "value": "SHM"
+                },
+                {
+                    "value": "SIM"
+                },
+                {
+                    "value": "SJM"
+                },
+                {
+                    "value": "SM"
+                },
+                {
+                    "value": "SMM"
+                },
+                {
+                    "value": "SO"
+                },
+                {
+                    "value": "SOA"
+                },
+                {
+                    "value": "SOB"
+                },
+                {
+                    "value": "SOD"
+                },
+                {
+                    "value": "SOI"
+                },
+                {
+                    "value": "SON"
+                },
+                {
+                    "value": "SOX"
+                },
+                {
+                    "value": "SPM"
+                },
+                {
+                    "value": "STM"
+                },
+                {
+                    "value": "SVM"
+                },
+                {
+                    "value": "SXM"
+                },
+                {
+                    "value": "Sm"
+                },
+                {
+                    "value": "Soc"
+                },
+                {
+                    "value": "Sol"
+                },
+                {
+                    "value": "TOM"
+                },
+                {
+                    "value": "Tom"
+                },
+                {
+                    "value": "Yom"
+                },
+                {
+                    "value": "nom"
+                },
+                {
+                    "value": "sol"
+                },
+                {
+                    "value": "soum"
+                },
+                {
+                    "value": "tom"
+                },
+                {
+                    "value": "EOM"
+                },
+                {
+                    "value": "SFM"
+                },
+                {
+                    "value": "SOMA"
+                },
+                {
+                    "value": "SOP"
+                },
+                {
+                    "value": "SoC"
+                },
+                {
+                    "value": "mom"
+                }
+            ],
+            "offset": 118,
+            "length": 3,
+            "context": {
+                "text": "...ples, bananas, and orangez. we also got som candy and chips. i seen a sign that sed...",
+                "offset": 43,
+                "length": 3
+            },
+            "sentence": "we also got som candy and chips.",
+            "type": {
+                "typeName": "UnknownWord"
+            },
+            "rule": {
+                "id": "MORFOLOGIK_RULE_EN_GB",
+                "description": "Possible spelling mistake",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "TYPOS",
+                    "name": "Possible Typo"
+                }
+            },
+            "ignoreForIncompleteSentence": false,
+            "contextForSureMatch": 0
+        },
+        {
+            "message": "The personal pronoun “I” should be uppercase.",
+            "shortMessage": "",
+            "replacements": [
+                {
+                    "value": "I"
+                }
+            ],
+            "offset": 139,
+            "length": 1,
+            "context": {
+                "text": "...angez. we also got som candy and chips. i seen a sign that sed \"Fres produts.\" we...",
+                "offset": 43,
+                "length": 1
+            },
+            "sentence": "i seen a sign that sed \"Fres produts.\" we askd the cashier wear the restrooms wer, and she pointd us to the back.",
+            "type": {
+                "typeName": "Other"
+            },
+            "rule": {
+                "id": "I_LOWERCASE",
+                "subId": "1",
+                "sourceFile": "grammar.xml",
+                "description": "i vs. I",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "TYPOS",
+                    "name": "Possible Typo"
+                }
+            },
+            "ignoreForIncompleteSentence": true,
+            "contextForSureMatch": -1
+        },
+        {
+            "message": "A verb (‘be’ or ‘have’) is missing before the past participle.",
+            "shortMessage": "Possible grammatical error",
+            "replacements": [
+                {
+                    "value": "have seen"
+                },
+                {
+                    "value": "saw",
+                    "shortDescription": "past form of 'see'"
+                }
+            ],
+            "offset": 141,
+            "length": 4,
+            "context": {
+                "text": "...gez. we also got som candy and chips. i seen a sign that sed \"Fres produts.\" we askd...",
+                "offset": 43,
+                "length": 4
+            },
+            "sentence": "i seen a sign that sed \"Fres produts.\" we askd the cashier wear the restrooms wer, and she pointd us to the back.",
+            "type": {
+                "typeName": "Other"
+            },
+            "rule": {
+                "id": "PRP_PAST_PART",
+                "subId": "7",
+                "sourceFile": "grammar.xml",
+                "description": "Agreement error: past participle without 'have'",
+                "issueType": "grammar",
+                "urls": [
+                    {
+                        "value": "https://languagetool.org/insights/post/verb-tenses/"
+                    }
+                ],
+                "category": {
+                    "id": "GRAMMAR",
+                    "name": "Grammar"
+                }
+            },
+            "ignoreForIncompleteSentence": true,
+            "contextForSureMatch": 8
+        },
+        {
+            "message": "Possible spelling mistake found.",
+            "shortMessage": "Spelling mistake",
+            "replacements": [
+                {
+                    "value": "used"
+                },
+                {
+                    "value": "set"
+                },
+                {
+                    "value": "led",
+                    "shortDescription": "past of 'lead'"
+                },
+                {
+                    "value": "see",
+                    "shortDescription": "to look at"
+                },
+                {
+                    "value": "red",
+                    "shortDescription": "a color"
+                },
+                {
+                    "value": "sea",
+                    "shortDescription": "ocean"
+                },
+                {
+                    "value": "send"
+                },
+                {
+                    "value": "bed",
+                    "shortDescription": "place to sleep"
+                },
+                {
+                    "value": "fed"
+                },
+                {
+                    "value": "seed",
+                    "shortDescription": "an embryonic plant"
+                },
+                {
+                    "value": "shed"
+                },
+                {
+                    "value": "sued"
+                },
+                {
+                    "value": "SD"
+                },
+                {
+                    "value": "Ted"
+                },
+                {
+                    "value": "sad"
+                },
+                {
+                    "value": "sec"
+                },
+                {
+                    "value": "sled"
+                },
+                {
+                    "value": "sped"
+                },
+                {
+                    "value": "wed"
+                },
+                {
+                    "value": "seq"
+                },
+                {
+                    "value": "sod",
+                    "shortDescription": "turf"
+                },
+                {
+                    "value": "GED"
+                },
+                {
+                    "value": "IED"
+                },
+                {
+                    "value": "QED"
+                },
+                {
+                    "value": "SBD"
+                },
+                {
+                    "value": "SVD"
+                },
+                {
+                    "value": "Syd"
+                },
+                {
+                    "value": "sew"
+                },
+                {
+                    "value": "CED"
+                },
+                {
+                    "value": "SGD"
+                },
+                {
+                    "value": "zed"
+                },
+                {
+                    "value": "Ned"
+                },
+                {
+                    "value": "AED"
+                },
+                {
+                    "value": "BED"
+                },
+                {
+                    "value": "BEd"
+                },
+                {
+                    "value": "EED"
+                },
+                {
+                    "value": "Ed"
+                },
+                {
+                    "value": "FED"
+                },
+                {
+                    "value": "Fed"
+                },
+                {
+                    "value": "JED"
+                },
+                {
+                    "value": "KED"
+                },
+                {
+                    "value": "LED"
+                },
+                {
+                    "value": "MED"
+                },
+                {
+                    "value": "MEd"
+                },
+                {
+                    "value": "Med"
+                },
+                {
+                    "value": "NED"
+                },
+                {
+                    "value": "OED"
+                },
+                {
+                    "value": "PED"
+                },
+                {
+                    "value": "RED"
+                },
+                {
+                    "value": "Red"
+                },
+                {
+                    "value": "SAD"
+                },
+                {
+                    "value": "SCD"
+                },
+                {
+                    "value": "SDD"
+                },
+                {
+                    "value": "SE"
+                },
+                {
+                    "value": "SEA"
+                },
+                {
+                    "value": "SEB"
+                },
+                {
+                    "value": "SEF"
+                },
+                {
+                    "value": "SEG"
+                },
+                {
+                    "value": "SEJ"
+                },
+                {
+                    "value": "SEK"
+                },
+                {
+                    "value": "SEL"
+                },
+                {
+                    "value": "SEM"
+                },
+                {
+                    "value": "SEO"
+                },
+                {
+                    "value": "SEP"
+                },
+                {
+                    "value": "SER"
+                },
+                {
+                    "value": "SES"
+                },
+                {
+                    "value": "SET"
+                },
+                {
+                    "value": "SEU"
+                },
+                {
+                    "value": "SEV"
+                },
+                {
+                    "value": "SEX"
+                },
+                {
+                    "value": "SEY"
+                },
+                {
+                    "value": "SEZ"
+                },
+                {
+                    "value": "SHD"
+                },
+                {
+                    "value": "SID"
+                },
+                {
+                    "value": "SMED"
+                },
+                {
+                    "value": "SND"
+                },
+                {
+                    "value": "SOD"
+                },
+                {
+                    "value": "SRD"
+                },
+                {
+                    "value": "SSD"
+                },
+                {
+                    "value": "STD"
+                },
+                {
+                    "value": "SUD"
+                },
+                {
+                    "value": "SYD"
+                },
+                {
+                    "value": "Se"
+                },
+                {
+                    "value": "Sea"
+                },
+                {
+                    "value": "Seb"
+                },
+                {
+                    "value": "Sen"
+                },
+                {
+                    "value": "Send"
+                },
+                {
+                    "value": "Sep"
+                },
+                {
+                    "value": "Sid"
+                },
+                {
+                    "value": "Syed"
+                },
+                {
+                    "value": "TED"
+                },
+                {
+                    "value": "UED"
+                },
+                {
+                    "value": "ZED"
+                },
+                {
+                    "value": "ed"
+                },
+                {
+                    "value": "sex",
+                    "shortDescription": "sexual activity"
+                },
+                {
+                    "value": "SEC"
+                },
+                {
+                    "value": "SPD"
+                }
+            ],
+            "offset": 158,
+            "length": 3,
+            "context": {
+                "text": "...som candy and chips. i seen a sign that sed \"Fres produts.\" we askd the cashier wea...",
+                "offset": 43,
+                "length": 3
+            },
+            "sentence": "i seen a sign that sed \"Fres produts.\" we askd the cashier wear the restrooms wer, and she pointd us to the back.",
+            "type": {
+                "typeName": "UnknownWord"
+            },
+            "rule": {
+                "id": "MORFOLOGIK_RULE_EN_GB",
+                "description": "Possible spelling mistake",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "TYPOS",
+                    "name": "Possible Typo"
+                }
+            },
+            "ignoreForIncompleteSentence": false,
+            "contextForSureMatch": 0
+        },
+        {
+            "message": "Possible spelling mistake found.",
+            "shortMessage": "Spelling mistake",
+            "replacements": [
+                {
+                    "value": "Free"
+                },
+                {
+                    "value": "Fees"
+                },
+                {
+                    "value": "Fresh"
+                },
+                {
+                    "value": "Fred"
+                },
+                {
+                    "value": "Fires"
+                },
+                {
+                    "value": "Fares"
+                },
+                {
+                    "value": "FRS"
+                },
+                {
+                    "value": "Foes"
+                },
+                {
+                    "value": "Frees"
+                },
+                {
+                    "value": "Ores"
+                },
+                {
+                    "value": "Ares"
+                },
+                {
+                    "value": "Fret"
+                },
+                {
+                    "value": "Frets"
+                },
+                {
+                    "value": "Fries"
+                },
+                {
+                    "value": "Frey"
+                },
+                {
+                    "value": "Ires"
+                },
+                {
+                    "value": "Freq"
+                },
+                {
+                    "value": "FDES"
+                },
+                {
+                    "value": "FES"
+                },
+                {
+                    "value": "Frew"
+                },
+                {
+                    "value": "RES"
+                },
+                {
+                    "value": "Freqs"
+                },
+                {
+                    "value": "Fros"
+                },
+                {
+                    "value": "FTEs"
+                }
+            ],
+            "offset": 163,
+            "length": 4,
+            "context": {
+                "text": "...andy and chips. i seen a sign that sed \"Fres produts.\" we askd the cashier wear the ...",
+                "offset": 43,
+                "length": 4
+            },
+            "sentence": "i seen a sign that sed \"Fres produts.\" we askd the cashier wear the restrooms wer, and she pointd us to the back.",
+            "type": {
+                "typeName": "UnknownWord"
+            },
+            "rule": {
+                "id": "MORFOLOGIK_RULE_EN_GB",
+                "description": "Possible spelling mistake",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "TYPOS",
+                    "name": "Possible Typo"
+                }
+            },
+            "ignoreForIncompleteSentence": false,
+            "contextForSureMatch": 0
+        },
+        {
+            "message": "Possible spelling mistake found.",
+            "shortMessage": "Spelling mistake",
+            "replacements": [
+                {
+                    "value": "produce"
+                },
+                {
+                    "value": "produced"
+                },
+                {
+                    "value": "producer"
+                },
+                {
+                    "value": "products"
+                },
+                {
+                    "value": "produces"
+                }
+            ],
+            "offset": 168,
+            "length": 7,
+            "context": {
+                "text": "...and chips. i seen a sign that sed \"Fres produts.\" we askd the cashier wear the restroom...",
+                "offset": 43,
+                "length": 7
+            },
+            "sentence": "i seen a sign that sed \"Fres produts.\" we askd the cashier wear the restrooms wer, and she pointd us to the back.",
+            "type": {
+                "typeName": "UnknownWord"
+            },
+            "rule": {
+                "id": "MORFOLOGIK_RULE_EN_GB",
+                "description": "Possible spelling mistake",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "TYPOS",
+                    "name": "Possible Typo"
+                }
+            },
+            "ignoreForIncompleteSentence": false,
+            "contextForSureMatch": 0
+        },
+        {
+            "message": "Possible spelling mistake found.",
+            "shortMessage": "Spelling mistake",
+            "replacements": [
+                {
+                    "value": "asked"
+                },
+                {
+                    "value": "ask"
+                },
+                {
+                    "value": "asks"
+                },
+                {
+                    "value": "ASD"
+                },
+                {
+                    "value": "AKD"
+                },
+                {
+                    "value": "ASK"
+                },
+                {
+                    "value": "Aske"
+                }
+            ],
+            "offset": 181,
+            "length": 4,
+            "context": {
+                "text": "...seen a sign that sed \"Fres produts.\" we askd the cashier wear the restrooms wer, and...",
+                "offset": 43,
+                "length": 4
+            },
+            "sentence": "i seen a sign that sed \"Fres produts.\" we askd the cashier wear the restrooms wer, and she pointd us to the back.",
+            "type": {
+                "typeName": "UnknownWord"
+            },
+            "rule": {
+                "id": "MORFOLOGIK_RULE_EN_GB",
+                "description": "Possible spelling mistake",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "TYPOS",
+                    "name": "Possible Typo"
+                }
+            },
+            "ignoreForIncompleteSentence": false,
+            "contextForSureMatch": 0
+        },
+        {
+            "message": "Possible spelling mistake found.",
+            "shortMessage": "Spelling mistake",
+            "replacements": [
+                {
+                    "value": "we"
+                },
+                {
+                    "value": "were",
+                    "shortDescription": "second-person singular simple past of 'be', e.g. 'you were'"
+                },
+                {
+                    "value": "her"
+                },
+                {
+                    "value": "war",
+                    "shortDescription": "armed conflict"
+                },
+                {
+                    "value": "wear"
+                },
+                {
+                    "value": "web"
+                },
+                {
+                    "value": "wet"
+                },
+                {
+                    "value": "per"
+                },
+                {
+                    "value": "wed"
+                },
+                {
+                    "value": "Wear"
+                },
+                {
+                    "value": "wee",
+                    "shortDescription": "small, a short time"
+                },
+                {
+                    "value": "usher"
+                },
+                {
+                    "value": "weir"
+                },
+                {
+                    "value": "AER"
+                },
+                {
+                    "value": "BER"
+                },
+                {
+                    "value": "CER"
+                },
+                {
+                    "value": "EER"
+                },
+                {
+                    "value": "ER"
+                },
+                {
+                    "value": "FER"
+                },
+                {
+                    "value": "HER"
+                },
+                {
+                    "value": "Her"
+                },
+                {
+                    "value": "KER"
+                },
+                {
+                    "value": "LER"
+                },
+                {
+                    "value": "MER"
+                },
+                {
+                    "value": "NER"
+                },
+                {
+                    "value": "PER"
+                },
+                {
+                    "value": "RER"
+                },
+                {
+                    "value": "RWer"
+                },
+                {
+                    "value": "SER"
+                },
+                {
+                    "value": "TER"
+                },
+                {
+                    "value": "UER"
+                },
+                {
+                    "value": "WEC"
+                },
+                {
+                    "value": "WEG"
+                },
+                {
+                    "value": "WEP"
+                },
+                {
+                    "value": "WET"
+                },
+                {
+                    "value": "WIR"
+                },
+                {
+                    "value": "WOer"
+                },
+                {
+                    "value": "Wea"
+                },
+                {
+                    "value": "Weir"
+                },
+                {
+                    "value": "Wem"
+                },
+                {
+                    "value": "Wen"
+                },
+                {
+                    "value": "Wert"
+                },
+                {
+                    "value": "der"
+                },
+                {
+                    "value": "er"
+                },
+                {
+                    "value": "ewer"
+                },
+                {
+                    "value": "fer"
+                },
+                {
+                    "value": "Augher"
+                },
+                {
+                    "value": "Usher"
+                }
+            ],
+            "offset": 217,
+            "length": 3,
+            "context": {
+                "text": "... we askd the cashier wear the restrooms wer, and she pointd us to the back. we had ...",
+                "offset": 43,
+                "length": 3
+            },
+            "sentence": "i seen a sign that sed \"Fres produts.\" we askd the cashier wear the restrooms wer, and she pointd us to the back.",
+            "type": {
+                "typeName": "UnknownWord"
+            },
+            "rule": {
+                "id": "MORFOLOGIK_RULE_EN_GB",
+                "description": "Possible spelling mistake",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "TYPOS",
+                    "name": "Possible Typo"
+                }
+            },
+            "ignoreForIncompleteSentence": false,
+            "contextForSureMatch": 0
+        },
+        {
+            "message": "Possible spelling mistake found.",
+            "shortMessage": "Spelling mistake",
+            "replacements": [
+                {
+                    "value": "point"
+                },
+                {
+                    "value": "points"
+                },
+                {
+                    "value": "pointed"
+                },
+                {
+                    "value": "pointe"
+                },
+                {
+                    "value": "pointy"
+                },
+                {
+                    "value": "Pointe"
+                },
+                {
+                    "value": "poind"
+                }
+            ],
+            "offset": 230,
+            "length": 6,
+            "context": {
+                "text": "...cashier wear the restrooms wer, and she pointd us to the back. we had a good time shop...",
+                "offset": 43,
+                "length": 6
+            },
+            "sentence": "i seen a sign that sed \"Fres produts.\" we askd the cashier wear the restrooms wer, and she pointd us to the back.",
+            "type": {
+                "typeName": "UnknownWord"
+            },
+            "rule": {
+                "id": "MORFOLOGIK_RULE_EN_GB",
+                "description": "Possible spelling mistake",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "TYPOS",
+                    "name": "Possible Typo"
+                }
+            },
+            "ignoreForIncompleteSentence": false,
+            "contextForSureMatch": 0
+        },
+        {
+            "message": "This sentence does not start with an uppercase letter.",
+            "shortMessage": "",
+            "replacements": [
+                {
+                    "value": "We"
+                }
+            ],
+            "offset": 253,
+            "length": 2,
+            "context": {
+                "text": "...oms wer, and she pointd us to the back. we had a good time shoping, and wen we lef...",
+                "offset": 43,
+                "length": 2
+            },
+            "sentence": "we had a good time shoping, and wen we left, i said \"good bye\" to the cashier.",
+            "type": {
+                "typeName": "Other"
+            },
+            "rule": {
+                "id": "UPPERCASE_SENTENCE_START",
+                "description": "Checks that a sentence starts with an uppercase letter",
+                "issueType": "typographical",
+                "urls": [
+                    {
+                        "value": "https://languagetool.org/insights/post/spelling-capital-letters/"
+                    }
+                ],
+                "category": {
+                    "id": "CASING",
+                    "name": "Capitalization"
+                }
+            },
+            "ignoreForIncompleteSentence": true,
+            "contextForSureMatch": -1
+        },
+        {
+            "message": "Possible spelling mistake found.",
+            "shortMessage": "Spelling mistake",
+            "replacements": [
+                {
+                    "value": "times hoping"
+                },
+                {
+                    "value": "time hoping"
+                },
+                {
+                    "value": "time shopping"
+                },
+                {
+                    "value": "time showing"
+                },
+                {
+                    "value": "time shaping"
+                },
+                {
+                    "value": "time sloping"
+                },
+                {
+                    "value": "time shoving"
+                },
+                {
+                    "value": "time scoping"
+                },
+                {
+                    "value": "time shoring"
+                },
+                {
+                    "value": "time shoeing"
+                },
+                {
+                    "value": "time shooing"
+                },
+                {
+                    "value": "time s hoping"
+                },
+                {
+                    "value": "time sh oping"
+                },
+                {
+                    "value": "time shop ing"
+                }
+            ],
+            "offset": 267,
+            "length": 12,
+            "context": {
+                "text": "...he pointd us to the back. we had a good time shoping, and wen we left, i said \"good bye\" to ...",
+                "offset": 43,
+                "length": 12
+            },
+            "sentence": "we had a good time shoping, and wen we left, i said \"good bye\" to the cashier.",
+            "type": {
+                "typeName": "UnknownWord"
+            },
+            "rule": {
+                "id": "MORFOLOGIK_RULE_EN_GB",
+                "description": "Possible spelling mistake",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "TYPOS",
+                    "name": "Possible Typo"
+                }
+            },
+            "ignoreForIncompleteSentence": false,
+            "contextForSureMatch": 0
+        },
+        {
+            "message": "Did you mean “when”?",
+            "shortMessage": "",
+            "replacements": [
+                {
+                    "value": "when"
+                }
+            ],
+            "offset": 285,
+            "length": 3,
+            "context": {
+                "text": "...e back. we had a good time shoping, and wen we left, i said \"good bye\" to the cashi...",
+                "offset": 43,
+                "length": 3
+            },
+            "sentence": "we had a good time shoping, and wen we left, i said \"good bye\" to the cashier.",
+            "type": {
+                "typeName": "Other"
+            },
+            "rule": {
+                "id": "WEN_WE",
+                "subId": "1",
+                "sourceFile": "grammar.xml",
+                "description": "wen vs. when/we",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "CONFUSED_WORDS",
+                    "name": "Commonly Confused Words"
+                }
+            },
+            "ignoreForIncompleteSentence": true,
+            "contextForSureMatch": 4
+        },
+        {
+            "message": "The personal pronoun “I” should be uppercase.",
+            "shortMessage": "",
+            "replacements": [
+                {
+                    "value": "I"
+                }
+            ],
+            "offset": 298,
+            "length": 1,
+            "context": {
+                "text": "...d a good time shoping, and wen we left, i said \"good bye\" to the cashier.",
+                "offset": 43,
+                "length": 1
+            },
+            "sentence": "we had a good time shoping, and wen we left, i said \"good bye\" to the cashier.",
+            "type": {
+                "typeName": "Other"
+            },
+            "rule": {
+                "id": "I_LOWERCASE",
+                "subId": "1",
+                "sourceFile": "grammar.xml",
+                "description": "i vs. I",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "TYPOS",
+                    "name": "Possible Typo"
+                }
+            },
+            "ignoreForIncompleteSentence": true,
+            "contextForSureMatch": -1
+        },
+        {
+            "message": "This word is normally spelled as one.",
+            "shortMessage": "Compound",
+            "replacements": [
+                {
+                    "value": "goodbye"
+                }
+            ],
+            "offset": 306,
+            "length": 8,
+            "context": {
+                "text": "... time shoping, and wen we left, i said \"good bye\" to the cashier.",
+                "offset": 43,
+                "length": 8
+            },
+            "sentence": "we had a good time shoping, and wen we left, i said \"good bye\" to the cashier.",
+            "type": {
+                "typeName": "Other"
+            },
+            "rule": {
+                "id": "EN_COMPOUNDS_GOOD_BYE",
+                "description": "Hyphenated words: good bye",
+                "issueType": "misspelling",
+                "category": {
+                    "id": "MISC",
+                    "name": "Miscellaneous"
+                }
+            },
+            "ignoreForIncompleteSentence": false,
+            "contextForSureMatch": 0
+        }
+    ],
+    "sentenceRanges": [
+        [
+            0,
+            65
+        ],
+        [
+            66,
+            105
+        ],
+        [
+            106,
+            138
+        ],
+        [
+            139,
+            252
+        ],
+        [
+            253,
+            331
+        ]
+    ]
+}
