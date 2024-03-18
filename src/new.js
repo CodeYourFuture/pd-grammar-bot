@@ -10,7 +10,9 @@ function createCommentBody(langToolResult) {
         };
 
         if (match.rule.category.name in categoryMatches) {
-            categoryMatches[match.rule.category.name].push(matchProperties);
+            if (categoryMatches[match.rule.category.name].length < 3) {
+                categoryMatches[match.rule.category.name].push(matchProperties);
+            }
         } else {
             categoryMatches[match.rule.category.name] = [];
             categoryMatches[match.rule.category.name].push(matchProperties);
