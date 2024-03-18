@@ -1,6 +1,7 @@
 const langToolResult = require("../sample-data/languagetool-response.json");
 
 function createCommentBody(langToolResult) {
+    const mistakesCount = langToolResult.matches.length;
     const categoryMatches = {};
 
     for (let match of langToolResult.matches) {
@@ -19,7 +20,9 @@ function createCommentBody(langToolResult) {
         }
     }
 
-    return categoryMatches;
+    const commentBody = `### Total Possible Mistakes: ${mistakesCount}`;
+
+    return commentBody;
 
     // if (langToolResult.matches.length === 0) {
     //     const commentBody = `### Total Mistakes Identified: ${langToolResult.matches.length}`;
