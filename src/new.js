@@ -26,6 +26,19 @@ function createCommentBody(langToolResult) {
         for (let key in categoryMatches) {
             commentBody += `\n- ${key}: ${categoryMatches[key].length}`;
         }
+        commentBody += "\n";
+
+        for (let key in categoryMatches) {
+            commentBody += "\n\n";
+            commentBody += `##${key}`;
+
+            categoryMatches[key].forEach((e, i) => {
+                if (i < 3) {
+                    commentBody += `\n> **What:** ${e.message}`;
+                    commentBody += `\n> **Where:** ${e.context}`;
+                }
+            });
+        }
     }
 
     return commentBody;
