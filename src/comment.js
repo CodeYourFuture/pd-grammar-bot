@@ -1,5 +1,3 @@
-let langToolResult = require("../sample-data/languagetool-response.json");
-
 function createCommentBody(langToolResult) {
     const mistakesCount = langToolResult.matches.length;
     const categoryMatches = getCategoryMatches(langToolResult);
