@@ -30,7 +30,7 @@ function createCommentBody(langToolResult) {
 
         for (let key in categoryMatches) {
             commentBody += "\n\n";
-            commentBody += `##${key}`;
+            commentBody += `####${key}`;
 
             categoryMatches[key].forEach((e, i) => {
                 if (i < 3) {
@@ -39,6 +39,8 @@ function createCommentBody(langToolResult) {
                 }
             });
         }
+
+        commentBody += `\n\n### Use a Grammar AI to fix these mistakes.`;
     }
 
     return commentBody;
