@@ -1,4 +1,4 @@
-const langToolResult = require("../sample-data/languagetool-response.json");
+let langToolResult = require("../sample-data/languagetool-response.json");
 
 function createCommentBody(langToolResult) {
     const mistakesCount = langToolResult.matches.length;
@@ -18,7 +18,7 @@ function createCommentBody(langToolResult) {
         }
     }
 
-    let commentBody = `### Total Possible Mistakes: ${mistakesCount}`;
+    let commentBody = `### Total Possible Mistakes: ${mistakesCount} ${mistakesCount >= 3 ? "👎" : "👍"}`;
 
     if (mistakesCount > 0) {
         commentBody += "\n";
