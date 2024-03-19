@@ -2,6 +2,13 @@ let langToolResult = require("../sample-data/languagetool-response.json");
 
 function createCommentBody(langToolResult) {
     const mistakesCount = langToolResult.matches.length;
+    const categoryMatches = getCategoryMatches(langToolResult);
+    const commentBody = generateCommentBody(categoryMatches, mistakesCount);
+
+    return commentBody;
+}
+
+function getCategoryMatches(langToolResult) {
     const categoryMatches = {};
 
     for (let match of langToolResult.matches) {
@@ -18,6 +25,10 @@ function createCommentBody(langToolResult) {
         }
     }
 
+    return categoryMatches;
+}
+
+function generateCommentBody(categoryMatches, mistakesCount) {
     let commentBody = `### Total Possible Mistakes: ${mistakesCount} ${mistakesCount >= 3 ? "👎" : "👍"}`;
 
     if (mistakesCount > 0) {
@@ -44,32 +55,6 @@ function createCommentBody(langToolResult) {
     }
 
     return commentBody;
-
-    // if (langToolResult.matches.length === 0) {
-    //     const commentBody = `### Total Mistakes Identified: ${langToolResult.matches.length}`;
-    //     return commentBody;
-    // } else {
-    //     let commentBody = `### Total Mistakes Identified: ${langToolResult.matches.length}`;
-
-    //     for (let mistake of langToolResult.matches) {
-    //         let replacements = [];
-    //         mistake.replacements.forEach((e, i) => {
-    //             if (i <= 3) {
-    //                 replacements.push(e.value);
-    //             }
-    //         });
-
-    //         commentBody += "\n";
-    //         commentBody += `> **What:** ${mistake.message}`;
-    //         commentBody += "\n";
-    //         commentBody += `> **Where:** ${mistake.context.text}`;
-    //         commentBody += "\n";
-    //         commentBody += `> **Replacements:** ${replacements.join(", ")}`;
-    //         commentBody += "\n";
-    //     }
-
-    //     return commentBody;
-    // }
 }
 
 console.log(createCommentBody(langToolResult));
