@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@probot/adapter-aws-lambda-serverless": "^3.0.4",
-    "pdf-parse": "^1.1.1"
+    "mammoth": "^1.7.0"
   },
   "engines": {
     "node": "18.x"
