@@ -15,11 +15,13 @@ function getCategoryMatches(langToolResult) {
             context: match.context.text
         };
 
-        if (match.rule.category.name in categoryMatches) {
-            categoryMatches[match.rule.category.name].push(matchProperties);
+        const categoryName = match.rule.category.name === 'Capitalization' ? 'Capitalisation' : match.rule.category.name;
+
+        if (categoryName in categoryMatches) {
+            categoryMatches[categoryName].push(matchProperties);
         } else {
-            categoryMatches[match.rule.category.name] = [];
-            categoryMatches[match.rule.category.name].push(matchProperties);
+            categoryMatches[categoryName] = [];
+            categoryMatches[categoryName].push(matchProperties);
         }
     }
 
