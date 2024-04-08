@@ -8,6 +8,7 @@ const crypto = require('crypto');
 const { server, handlers, requestPayloads } = require('./server');
 const { handler } = require('../netlify/functions/pd-grammar-bot');
 const payload = require('../sample-data/github-event.json');
+const { createCommentBody } = require('../src/comment');
 
 beforeEach(() => {
     server.resetHandlers();
@@ -18,13 +19,22 @@ afterAll(() => {
 });
 
 describe('GitHub app', () => {
-    it('checks PDF text for mistakes', async () => {
+    it('checks text for mistakes', async () => {
         server.use(...handlers.checkText);
         const result = await handler(createGitHubRequest(payload));
 
         expect(result.statusCode).toBe(200);
         expect(requestPayloads.checkText.checkText.text).toContain('My PD Coursework');
-        expect(requestPayloads.checkText.createComment.body).toContain('Total mistakes: 2');
+        expect(requestPayloads.checkText.createComment.body).toContain('Total Possible Mistakes: 2');
+    });
+});
+
+describe('createCommentBody function', () => {
+    it('should generate correct comment body for no mistakes', () => {
+        const langToolResult = {
+            matches: []
+        };
+        expect(createCommentBody(langToolResult)).toEqual('### 👍 Total Possible Mistakes: 0');
     });
 });
 

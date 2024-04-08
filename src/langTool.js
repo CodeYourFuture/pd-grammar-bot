@@ -1,6 +1,6 @@
 const langToolUrl = process.env.NODE_ENV === 'development' ? 'http://localhost:8010/v2/check' : process.env.LANG_TOOL_URL;
 
-async function checkText(pdfText) {
+async function checkText(text) {
     const res = await fetch(langToolUrl, {
         method: 'POST',
         headers: {
@@ -8,7 +8,7 @@ async function checkText(pdfText) {
         },
         body: new URLSearchParams({
             language: 'en-GB',
-            text: pdfText
+            text
         })
     });
 
