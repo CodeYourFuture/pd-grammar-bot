@@ -1,0 +1,33 @@
+name: 'Test & Deploy'
+
+on:
+  pull_request:
+    branches:
+      - "main"
+  push:
+    branches:
+      - "main"
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          cache: 'npm'
+          cache-dependency-path: 'package-lock.json'
+
+      - name: Install packages
+        run: npm ci
+      
+      - name: Run tests
+        run: npm test
+        env:
+          SLACK_BOT_TOKEN: 'slackToken'
+          SLACK_SIGNING_SECRET: 'slackSecret'
+          CUSTOM_TRAINEE_FIELD: ${{secrets.CUSTOM_TRAINEE_FIELD}}
