@@ -28,10 +28,6 @@ jobs:
       
       - name: Run tests
         run: npm test
-        env:
-          SLACK_BOT_TOKEN: 'slackToken'
-          SLACK_SIGNING_SECRET: 'slackSecret'
-          CUSTOM_TRAINEE_FIELD: ${{secrets.CUSTOM_TRAINEE_FIELD}}
   
   deploy:
     needs:
