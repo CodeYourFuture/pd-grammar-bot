@@ -1,4 +1,4 @@
-const langToolUrl = process.env.NODE_ENV === 'development' ? 'http://localhost:8010/v2/check' : process.env.LANG_TOOL_URL;
+const langToolUrl = 'https://api.languagetool.org/v2/check';
 
 async function checkText(text) {
     const res = await fetch(langToolUrl, {
