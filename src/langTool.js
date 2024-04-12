@@ -12,9 +12,12 @@ async function checkText(text) {
         })
     });
 
-    const langToolResult = await res.json();
-
-    return langToolResult;
+    if (res.headers.get('Content-Type')) {
+        const langToolResult = await res.json()
+        return langToolResult
+    } else {
+        throw new Error(await res.text())
+    }
 }
 
 module.exports.checkText = checkText;
