@@ -22,7 +22,7 @@ const handlers = {
 
             return new HttpResponse(fileBuffer, { status: 200 });
         }),
-        http.post('http://localhost:8010/v2/check', async ({ request }) => {
+        http.post('https://api.languagetool.org/v2/check', async ({ request }) => {
             requestPayloads.checkText.checkText = await getPayload(request);
 
             return HttpResponse.json(langToolResponse);
